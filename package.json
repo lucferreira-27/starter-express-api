@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cyclic-software/starter-express-api.git"
@@ -17,7 +18,9 @@
   },
   "homepage": "https://github.com/cyclic-software/starter-express-api#readme",
   "dependencies": {
+    "dontpad-api": "^1.0.5",
     "express": "^4.17.1",
+    "node-fetch": "^3.3.0",
     "node-schedule": "^2.1.0"
   }
 }
