@@ -9,12 +9,9 @@ app.all('/', (req, res) => {
 })
 app.listen(process.env.PORT || 3000)
 
-cron.scheduleJob('*/5 * * * * *', () => {
-    test++;
-    console.log(' MY CRON SAYS: "5 seconds has pass".')
-})
 
 cron.scheduleJob('*/60 * * * * *', () => {
     console.log(' MY CRON SAYS: "60 seconds has pass".')
+    test++
 })
 
