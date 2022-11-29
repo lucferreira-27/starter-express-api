@@ -1,6 +1,9 @@
 
 const express = require('express')
 const app = express()
+const time = 0
+const task = require('./tasks')
+task(time)
 app.all('/hello', (req, res) => {
     console.log("Just got a request!")
     res.send(`Yo! Hello World`)
